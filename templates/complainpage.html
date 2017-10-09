@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><body>
+<form name="form" action="{% url 'complain' %}" method="POST" >
+    {% csrf_token %}
+
+
+
+
+    <div style="max-width:470px;">
+ <center> <input type="text" style="marginleft:20%;"
+placeholder="Location" name="location" /></center>
+ </div><br>
+
+    <div style="max-width:470px;">
+ <center> <input type="text" style="marginleft:20%;"
+placeholder="SpecificLocation" name="specificlocation" /></center>
+ </div><br>
+
+    <div style="max-width:470px;">
+ <center> <input type="text" style="marginleft:20%;"
+placeholder="details" name="details" /></center>
+ </div><br>
+
+
+ <div style="max-width:470px;">
+ <center> <button style="border:0px;backgroundcolor:#4285F4;margin-top:8%;height:35px;width:80%;margin-left:19%;"
+
+type="submit" value="Submit" ><strong>Submit</strong></button></center>
+ </div>
+ </div>
+ </form>
+</body></html>
